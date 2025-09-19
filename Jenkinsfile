@@ -1,7 +1,7 @@
 pipeline {
   agent any
   // leave this here OR configure the trigger in the UI — not both
-  triggers { pollSCM('H/0.5 * * * *') }
+  triggers { pollSCM('H/2 * * * *') }
   options { skipDefaultCheckout(true) }
 
   stages {
